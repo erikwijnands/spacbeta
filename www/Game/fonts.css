@@ -1,0 +1,11 @@
+@font-face {
+      font-family: 'chintzy';
+      src: url('chintzy.ttf') format('truetype');
+}
+body {    
+	font-family: 'chintzy';
+}
+.fontLoader {    
+	position: absolute;    
+	left: -10000px;
+}
