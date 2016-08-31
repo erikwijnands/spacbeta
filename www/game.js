@@ -13,30 +13,6 @@ BasicGame.Game.prototype = {
   },
   create: function () {
     this.setbak();
-    /////star test
-    /*this.star = this.game.make.sprite(0, 0, 'starvert');
-    this.texture1 = this.game.add.renderTexture(800, 600, 'texture1');
-    this.texture2 = this.game.add.renderTexture(800, 600, 'texture2');
-    this.texture3 = this.game.add.renderTexture(800, 600, 'texture3');    
-    this.game.add.sprite(0, 0, this.texture1);
-    this.game.add.sprite(0, 0, this.texture2);
-    this.game.add.sprite(0, 0, this.texture3);
-    var t = this.texture1;
-    var s = 2;
-    for (var i = 0; i < 30; i++)
-    {
-        if (i == 20)
-        {
-            s = 3;
-            t = this.texture2;
-        }
-        else if (i == 30)
-        {
-            s = 3;
-            t = this.texture3;
-        }
-        this.stars.push( { x: this.game.world.randomX, y: this.game.world.randomY, speed: s, texture: t });
-    };*/
     this.setupAudio();
     this.setplayer();
     this.setenemies();
@@ -55,24 +31,6 @@ BasicGame.Game.prototype = {
     this.enemyFire();
     this.processPlayerInput();
     this.processDelayedEffects();
-    /////star test
-    /*for (var i = 0; i < 30; i++)
-    {
-        this.stars[i].y += this.stars[i].speed;
-        if (this.stars[i].y > 30)
-        {
-            this.stars[i].x = this.game.world.randomX;
-            this.stars[i].y = -32;
-        }
-        if (i == 0 || i == 20 || i == 30)
-        {
-            this.stars[i].texture.renderXY(this.star, this.stars[i].x, this.stars[i].y, true);
-        }
-        else
-        {
-            this.stars[i].texture.renderXY(this.star, this.stars[i].x, this.stars[i].y, false);
-        }
-    }*/
   },
 
   setupAudio: function () {
